@@ -11,11 +11,11 @@ def tf (thelist, current, curpath=""):
         #tf([thelist[1]]+thelist[2:]+[thelist[0]],current)
     else:
         if current == 24:
-            print curpath
+            print(curpath)
             True
         else:
-        	False
+            False
 def aux(a,b):
     tf(a[1:],a[0],str(a[0]))
-for perm in itertools.permutations([5.0,7.0,6.0,3.0]):
+for perm in itertools.permutations([5.0,7.0,9.0,1.0]):
     aux(perm,0)
